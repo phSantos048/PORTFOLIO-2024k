@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleExtra.css">
+
+    <style>
+         .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 20px;
+        }
+
+        .card {
+            width: calc(33.33% - 40px);
+            margin-bottom: 20px;
+            background-color: #2c303a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 200ms;
+            cursor: pointer;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .card img {
+            width: 150px; 
+            height: 100px; 
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+       
+        #voltar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #voltar button {
+            background-color: #5022a7; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #voltar button:hover {
+            background-color: #784bca; 
+        }
+    </style>
+
+    <title>Certificados</title>
+</head>
+<body>
+    <h1>Certificados</h1>
+    <div class="container">
+
+      <br>
+        <div class="cards">
+           
+            <div class="card">
+                <img src="./images/python.PNG" alt="Imagem da Atividade 1">
+                <p>Curso: Python</p>
+            </div>
+            <div class="card">
+                <img src="./images/linux.PNG" alt="Imagem da Atividade 1">
+                <p>Curso: Linux</p>
+            </div>
+            <div class="card">
+                <img src="./images/CertificadoCursoExtra.png" alt="Imagem da Atividade 1">
+                <p>Curso: Administração de Materiais - Turma 2024B</p></p>
+            </div>
+            <div class="card">
+                <img src="./images/Certificado4.png" alt="Imagem da Atividade 1">
+                <p>Curso: Mercado de Trabalho e Planejamento da Carreira Profissional</p></p>
+            </div>
+    </div>
+
+    <section id="voltar">
+        <button onclick="voltarParaInicio1()">Voltar para a página inicial</button>
+    </section>
+</body>
+<script src="scriptExtra.js"></script>
+</html>
